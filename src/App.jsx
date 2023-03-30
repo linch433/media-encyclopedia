@@ -1,8 +1,11 @@
 import './App.css';
-import HomePage from "./pages/HomePage.jsx";
+import routes from "./routes/index.jsx";
+import {useRoutes} from 'react-router-dom';
 
 const App = () => {
-  return <HomePage/>
-}
+  const element = useRoutes(routes);
+
+  return <div> {element} </div>;
+};
 
 export default App
