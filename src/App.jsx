@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {Layout, theme} from 'antd';
+import {useState} from 'react';
+import MainLayout from "./features/layout/MainLayout.jsx";
+import './app.css';
+import HeaderMenu from "./features/layout/Header.jsx";
+import SiderMenu from "./features/layout/Sider.jsx";
+import FooterMenu from "./features/layout/Footer.jsx";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [collapsed, setCollapsed] = useState(false);
+  const {token: {colorBgContainer}} = theme.useToken();
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    <Layout style={{height: '100vh'}}>
+      <SiderMenu collapsed={collapsed}/>
+      <Layout className="site-layout">
+        <HeaderMenu collapsed={collapsed} setCollapsed={setCollapsed}/>
+        <MainLayout/>
+        <FooterMenu/>
+      </Layout>
+    </Layout>
+  );
 }
-
-export default App
