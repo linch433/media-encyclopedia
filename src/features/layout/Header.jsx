@@ -6,7 +6,7 @@ const {Header} = Layout;
 
 const HeaderMenu = ({collapsed, setCollapsed}) => {
   const {token: {colorBgContainer}} = theme.useToken();
-  
+
   return (
     <Header
       style={{

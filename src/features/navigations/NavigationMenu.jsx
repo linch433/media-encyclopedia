@@ -31,7 +31,13 @@ export function NavigationMenu() {
   };
 
   return (
-    <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} onClick={handleMenuClick} style={{minWidth: 0}}>
+    <Menu
+      theme='light'
+      mode='inline'
+      defaultSelectedKeys={['1']}
+      onClick={handleMenuClick}
+      style={{minWidth: 0}}
+    >
       {menuItems.map((item) => renderMenuItem(item))}
     </Menu>
   );
