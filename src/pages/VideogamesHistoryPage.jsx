@@ -1,10 +1,13 @@
-import React from 'react';
+import {Typography} from "antd";
 
 const VideoGamesHistoryPage = () => {
+  const {Title, Text, Paragraph} = Typography;
+
   return (
-    <div>
-      Video games history page
-    </div>
+    <Typography>
+      <Title>Історія відеоігор</Title>
+      <Paragraph>Тут щось типу параграфа</Paragraph>
+    </Typography>
   );
 };
 
