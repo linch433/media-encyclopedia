@@ -5,19 +5,19 @@ import {
   UserOutlined,
   DashboardOutlined,
   TeamOutlined,
-  BookOutlined
-} from "@ant-design/icons";
+  BookOutlined,
+} from '@ant-design/icons';
 
 export const menuItems = [
   {
     key: '1',
-    icon: <HistoryOutlined/>,
+    icon: <HistoryOutlined />,
     label: 'Історія відеоігор',
-    to: '/'
+    to: '/',
   },
   {
     key: '2',
-    icon: <VideoCameraOutlined/>,
+    icon: <VideoCameraOutlined />,
     label: 'Жанри відеоігор',
     subMenu: [
       {
@@ -27,44 +27,58 @@ export const menuItems = [
       },
       {
         key: '2-2',
-        label: 'Екшн',
-        to: '/genres',
+        label: 'Action',
+        to: '/genres/action',
       },
       {
         key: '2-3',
-        label: 'Пригоди',
-        to: '/genres',
+        label: 'Adventure',
+        to: '/genres/adventure',
       },
-      // ...додаткові підпункти меню
+      {
+        key: '2-4',
+        label: 'Strategic',
+        to: '/genres/strategic',
+      },
+      {
+        key: '2-5',
+        label: 'Sports',
+        to: '/genres/sports',
+      },
+      {
+        key: '2-6',
+        label: 'Rpg',
+        to: '/genres/rpg',
+      },
     ],
   },
   {
     key: '3',
-    icon: <UserOutlined/>,
+    icon: <UserOutlined />,
     label: 'Відомі розробники',
     to: '/famous_developers',
   },
   {
     key: '4',
-    icon: <DashboardOutlined/>,
+    icon: <DashboardOutlined />,
     label: 'Ігрові двигуни',
     to: '/engines',
   },
   {
     key: '5',
-    icon: <TeamOutlined/>,
+    icon: <TeamOutlined />,
     label: 'Ігрові компанії',
     to: '/companies',
   },
   {
     key: '6',
-    icon: <BookOutlined/>,
+    icon: <BookOutlined />,
     label: 'Глосарій',
     to: '/glossary',
   },
   {
     key: '7',
-    icon: <LinkOutlined/>,
+    icon: <LinkOutlined />,
     label: 'Посилання',
     to: '/references',
   },
