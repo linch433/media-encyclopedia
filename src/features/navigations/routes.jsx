@@ -11,13 +11,13 @@ import {
 export const menuItems = [
   {
     key: '1',
-    icon: <HistoryOutlined />,
+    icon: <HistoryOutlined/>,
     label: 'Історія відеоігор',
-    to: '/',
+    to: '/games_history',
   },
   {
     key: '2',
-    icon: <VideoCameraOutlined />,
+    icon: <VideoCameraOutlined/>,
     label: 'Жанри відеоігор',
     subMenu: [
       {
@@ -54,31 +54,31 @@ export const menuItems = [
   },
   {
     key: '3',
-    icon: <UserOutlined />,
+    icon: <UserOutlined/>,
     label: 'Відомі розробники',
     to: '/famous_developers',
   },
   {
     key: '4',
-    icon: <DashboardOutlined />,
+    icon: <DashboardOutlined/>,
     label: 'Ігрові двигуни',
     to: '/engines',
   },
   {
     key: '5',
-    icon: <TeamOutlined />,
+    icon: <TeamOutlined/>,
     label: 'Ігрові компанії',
     to: '/companies',
   },
   {
     key: '6',
-    icon: <BookOutlined />,
+    icon: <BookOutlined/>,
     label: 'Глосарій',
     to: '/glossary',
   },
   {
     key: '7',
-    icon: <LinkOutlined />,
+    icon: <LinkOutlined/>,
     label: 'Посилання',
     to: '/references',
   },

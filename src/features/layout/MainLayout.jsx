@@ -1,7 +1,7 @@
-import { Layout, theme } from 'antd';
-import { Route, Routes } from 'react-router-dom';
+import {Layout, theme} from 'antd';
+import {Route, Routes} from 'react-router-dom';
 import ReferencesPage from '../../pages/References.jsx';
-import VideoGamesHistoryPage from '../../pages/VideogamesHistoryPage.jsx';
+import VideoGamesHistoryPage from '../../pages/VideoGamesHistoryPage.jsx';
 import GenresPage from '../../pages/GenresPage/GenresPage.jsx';
 import FamousDevelopersPage from '../../pages/FamousDevelopersPage.jsx';
 import EnginesPage from '../../pages/EnginesPage.jsx';
@@ -12,12 +12,13 @@ import AdventureGenrePage from '../../pages/GenresPage/AdventureGenrePage.jsx';
 import RpgGenrePage from '../../pages/GenresPage/RpgGenrePage.jsx';
 import SportsGenrePage from '../../pages/GenresPage/SportsGenrePage.jsx';
 import StrategicGenrePage from '../../pages/GenresPage/StrategicGenrePage.jsx';
+import WelcomePage from "../../pages/WelcomePage/WelcomePage.jsx";
 
-const { Content } = Layout;
+const {Content} = Layout;
 
 const MainLayout = () => {
   const {
-    token: { colorBgContainer },
+    token: {colorBgContainer},
   } = theme.useToken();
 
   return (
@@ -31,13 +32,14 @@ const MainLayout = () => {
       }}
     >
       <Routes>
-        <Route path="/" element={<VideoGamesHistoryPage />} />
-        <Route path="/genres" element={<GenresPage />} />
-        <Route path="/famous_developers" element={<FamousDevelopersPage />} />
-        <Route path="/engines" element={<EnginesPage />} />
-        <Route path="/companies" element={<CompaniesPage />} />
-        <Route path="/glossary" element={<GlossaryPage />} />
-        <Route path="/references" element={<ReferencesPage />} />
+        <Route path="/" element={<WelcomePage/>}/>
+        <Route path="/games_history" element={<VideoGamesHistoryPage/>}/>
+        <Route path="/genres" element={<GenresPage/>}/>
+        <Route path="/famous_developers" element={<FamousDevelopersPage/>}/>
+        <Route path="/engines" element={<EnginesPage/>}/>
+        <Route path="/companies" element={<CompaniesPage/>}/>
+        <Route path="/glossary" element={<GlossaryPage/>}/>
+        <Route path="/references" element={<ReferencesPage/>}/>
         <Route path='/genres/action' element={<ActionGenrePage/>}/>
         <Route path='/genres/adventure' element={<AdventureGenrePage/>}/>
         <Route path='/genres/rpg' element={<RpgGenrePage/>}/>

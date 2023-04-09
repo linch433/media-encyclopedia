@@ -10,7 +10,14 @@ const SiderMenu = ({collapsed}) => {
 
   return (
     <Sider theme='light' trigger={null} collapsible collapsed={collapsed}>
-      <div className="logo">{collapsed ? <MiniLogo/> : <BigLogo/>}</div>
+      <div
+        className="logo"
+        onClick={() => {
+          navigation('/')
+        }}
+      >
+        {collapsed ? <MiniLogo/> : <BigLogo/>}
+      </div>
       <NavigationMenu/>
     </Sider>
   );

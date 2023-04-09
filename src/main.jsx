@@ -11,15 +11,13 @@ import {ComponentPreviews, useInitial} from "./dev/index.js";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <BrowserRouter>
-      <ConfigProvider theme={theme}>
-        <DevSupport ComponentPreviews={ComponentPreviews}
-                    useInitialHook={useInitial}
-        >
-          <App/>
-        </DevSupport>
-      </ConfigProvider>
+        <ConfigProvider theme={theme}>
+            <DevSupport ComponentPreviews={ComponentPreviews}
+                        useInitialHook={useInitial}
+            >
+                <App/>
+            </DevSupport>
+        </ConfigProvider>
     </BrowserRouter>
-  </React.StrictMode>
 )
