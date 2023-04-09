@@ -18,4 +18,5 @@
     margin: 16px;
     font-size: 2rem;
     color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
 }

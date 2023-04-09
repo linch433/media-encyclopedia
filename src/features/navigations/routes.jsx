@@ -5,15 +5,15 @@ import {
   UserOutlined,
   DashboardOutlined,
   TeamOutlined,
-  BookOutlined
-} from "@ant-design/icons";
+  BookOutlined,
+} from '@ant-design/icons';
 
 export const menuItems = [
   {
     key: '1',
     icon: <HistoryOutlined/>,
     label: 'Історія відеоігор',
-    to: '/'
+    to: '/games_history',
   },
   {
     key: '2',
@@ -27,15 +27,29 @@ export const menuItems = [
       },
       {
         key: '2-2',
-        label: 'Екшн',
-        to: '/genres',
+        label: 'Action',
+        to: '/genres/action',
       },
       {
         key: '2-3',
-        label: 'Пригоди',
-        to: '/genres',
+        label: 'Adventure',
+        to: '/genres/adventure',
       },
-      // ...додаткові підпункти меню
+      {
+        key: '2-4',
+        label: 'Strategic',
+        to: '/genres/strategic',
+      },
+      {
+        key: '2-5',
+        label: 'Sports',
+        to: '/genres/sports',
+      },
+      {
+        key: '2-6',
+        label: 'Rpg',
+        to: '/genres/rpg',
+      },
     ],
   },
   {

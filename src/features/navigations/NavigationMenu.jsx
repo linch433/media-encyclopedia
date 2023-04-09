@@ -1,12 +1,12 @@
-import {Menu} from "antd";
-import {useNavigate} from "react-router-dom";
-import {menuItems} from "./routes.jsx";
-import renderMenuItem from "../../utils/renderMenuItem.jsx";
+import { Menu } from 'antd';
+import { useNavigate } from 'react-router-dom';
+import { menuItems } from './routes.jsx';
+import renderMenuItem from '../../utils/renderMenuItem.jsx';
 
 export function NavigationMenu() {
   const navigate = useNavigate();
 
-  const handleMenuClick = (e) => {
+  const handleMenuClick = e => {
     const findItem = (items, key) => {
       for (const item of items) {
         if (item.key === key) {
@@ -32,13 +32,13 @@ export function NavigationMenu() {
 
   return (
     <Menu
-      theme='light'
-      mode='inline'
+      theme="light"
+      mode="inline"
       defaultSelectedKeys={['1']}
       onClick={handleMenuClick}
-      style={{minWidth: 0}}
+      style={{ minWidth: 0, fontSize: 14 }}
     >
-      {menuItems.map((item) => renderMenuItem(item))}
+      {menuItems.map(item => renderMenuItem(item))}
     </Menu>
   );
 }
