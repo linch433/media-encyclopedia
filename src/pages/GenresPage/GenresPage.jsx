@@ -1,9 +1,17 @@
-import {Collapse, Typography} from 'antd';
+import {Collapse, Typography, theme} from 'antd';
+import {CaretRightOutlined} from '@ant-design/icons';
 import {genresArray} from "../../data/genresArray.js";
 
 const GenresPage = () => {
   const {Title, Paragraph} = Typography;
   const {Panel} = Collapse;
+  const {token} = theme.useToken();
+
+  const panelStyle = {
+    background: token.colorFillAlter,
+    borderRadius: token.borderRadiusLG,
+    border: 'none',
+  }
 
   return (
     <Typography>
@@ -44,8 +52,12 @@ const GenresPage = () => {
         симуляторів, пригод, рольових пригод, військових ігор та екшенів/аркад.
       </Paragraph>
       <Paragraph>
-        Виділяють такі жанри відеоігор:
-        <Collapse>
+        <div style={{marginBottom: '0.5rem'}}>Виділяють такі жанри відеоігор:</div>
+        <Collapse
+          bordered={false}
+          expandIcon={({isActive}) => <CaretRightOutlined rotate={isActive ? 90 : 0}/>}
+          style={{background: token.colorBgContainer}}
+        >
           {genresArray.map((genre, index) => (
             <Panel header={genre.title} key={index}>
               {genre.items.length > 0 ? (

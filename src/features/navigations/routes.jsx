@@ -50,6 +50,31 @@ export const menuItems = [
         label: 'Rpg',
         to: '/genres/rpg',
       },
+      {
+        key: '2-7',
+        label: 'Action-Adventure',
+        to: '/genres/action_adventure',
+      },
+      {
+        key: '2-8',
+        label: 'Puzzle',
+        to: '/genres/puzzle',
+      },
+      {
+        key: '2-9',
+        label: 'Role playing',
+        to: '/genres/roleplaying',
+      },
+      {
+        key: '2-10',
+        label: 'MMO',
+        to: '/genres/mmo',
+      },
+      {
+        key: '2-11',
+        label: 'Simulation',
+        to: '/genres/simulation',
+      },
     ],
   },
   {

@@ -13,6 +13,11 @@ import RpgGenrePage from '../../pages/GenresPage/RpgGenrePage.jsx';
 import SportsGenrePage from '../../pages/GenresPage/SportsGenrePage.jsx';
 import StrategicGenrePage from '../../pages/GenresPage/StrategicGenrePage.jsx';
 import WelcomePage from "../../pages/WelcomePage/WelcomePage.jsx";
+import ActionAdventureGenrePage from "../../pages/GenresPage/ActionAdventureGenrePage.jsx";
+import PuzzleGenrePage from "../../pages/GenresPage/PuzzleGenrePage.jsx";
+import RolePlayingGenrePage from "../../pages/GenresPage/RolePlayingGenrePage.jsx";
+import MmoGenrePage from "../../pages/GenresPage/MMOGenrePage.jsx";
+import SimulationGenrePage from "../../pages/GenresPage/SimulationGenrePage.jsx";
 
 const {Content} = Layout;
 
@@ -45,6 +50,11 @@ const MainLayout = () => {
         <Route path='/genres/rpg' element={<RpgGenrePage/>}/>
         <Route path='/genres/sports' element={<SportsGenrePage/>}/>
         <Route path='/genres/strategic' element={<StrategicGenrePage/>}/>
+        <Route path='/genres/action_adventure' element={<ActionAdventureGenrePage/>}/>
+        <Route path='/genres/puzzle' element={<PuzzleGenrePage/>}/>
+        <Route path='/genres/roleplaying' element={<RolePlayingGenrePage/>}/>
+        <Route path='/genres/mmo' element={<MmoGenrePage/>}/>
+        <Route path='/genres/simulation' element={<SimulationGenrePage/>}/>
       </Routes>
     </Content>
   );
