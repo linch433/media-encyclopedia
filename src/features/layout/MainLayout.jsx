@@ -9,7 +9,6 @@ import CompaniesPage from '../../pages/CompaniesPage.jsx';
 import GlossaryPage from '../../pages/GlossaryPage.jsx';
 import ActionGenrePage from '../../pages/GenresPage/ActionGenrePage.jsx';
 import AdventureGenrePage from '../../pages/GenresPage/AdventureGenrePage.jsx';
-import RpgGenrePage from '../../pages/GenresPage/RpgGenrePage.jsx';
 import SportsGenrePage from '../../pages/GenresPage/SportsGenrePage.jsx';
 import StrategicGenrePage from '../../pages/GenresPage/StrategicGenrePage.jsx';
 import WelcomePage from "../../pages/WelcomePage/WelcomePage.jsx";
@@ -47,7 +46,6 @@ const MainLayout = () => {
         <Route path="/references" element={<ReferencesPage/>}/>
         <Route path='/genres/action' element={<ActionGenrePage/>}/>
         <Route path='/genres/adventure' element={<AdventureGenrePage/>}/>
-        <Route path='/genres/rpg' element={<RpgGenrePage/>}/>
         <Route path='/genres/sports' element={<SportsGenrePage/>}/>
         <Route path='/genres/strategic' element={<StrategicGenrePage/>}/>
         <Route path='/genres/action_adventure' element={<ActionAdventureGenrePage/>}/>
