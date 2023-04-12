@@ -28,7 +28,7 @@ export const menuItems = [
       {
         key: '2-2',
         label: 'Action',
-        to: '/genres/action',
+        to: '/genres/actions',
       },
       {
         key: '2-3',
@@ -47,8 +47,28 @@ export const menuItems = [
       },
       {
         key: '2-6',
-        label: 'Rpg',
-        to: '/genres/rpg',
+        label: 'Action-Adventure',
+        to: '/genres/action_adventure',
+      },
+      {
+        key: '2-7',
+        label: 'Puzzle',
+        to: '/genres/puzzle',
+      },
+      {
+        key: '2-8',
+        label: 'Role playing',
+        to: '/genres/roleplaying',
+      },
+      {
+        key: '2-9',
+        label: 'MMO',
+        to: '/genres/mmo',
+      },
+      {
+        key: '2-10',
+        label: 'Simulation',
+        to: '/genres/simulation',
       },
     ],
   },
