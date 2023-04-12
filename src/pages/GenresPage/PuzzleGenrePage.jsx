@@ -1,6 +1,13 @@
 import {Typography} from "antd";
-import {puzzleParagraph} from "../../data/GenresPage/puzzles.js";
+import {
+  breakoutClone,
+  exploration,
+  physicsGame,
+  puzzleParagraph, puzzlePlatformGame,
+  tileMatchingGame
+} from "../../data/GenresPage/puzzles.js";
 import TitleDivider from "../../components/VideoGamesHistoryPage/TitleDivider.jsx";
+import ImageGroup from "../../styles/ImageGroup/ImageGroup.jsx";
 
 const {Title, Paragraph} = Typography;
 
@@ -18,7 +25,7 @@ const PuzzleGenrePage = () => {
       <Paragraph>
         {puzzleParagraph.third}
       </Paragraph>
-      
+
       <BreakoutCloneGame/>
       <LogicalGame/>
       <PhysicsGame/>
@@ -40,6 +47,7 @@ const BreakoutCloneGame = () => {
       <Paragraph>
         {puzzleParagraph.fourth}
       </Paragraph>
+      <ImageGroup images={breakoutClone}/>
     </>
   );
 };
@@ -65,6 +73,7 @@ const PhysicsGame = () => {
       <Paragraph>
         {puzzleParagraph.seventh}
       </Paragraph>
+      <ImageGroup images={physicsGame}/>
     </>
   );
 };
@@ -87,6 +96,7 @@ const Exploration = () => {
       <Paragraph>
         {puzzleParagraph.ninth}
       </Paragraph>
+      <ImageGroup images={exploration}/>
     </>
   );
 };
@@ -116,10 +126,11 @@ const RevealPicture = () => {
 const TitleMatchingGame = () => {
   return (
     <>
-      <TitleDivider title={'Title-matching game'}/>
+      <TitleDivider title={'Tile-matching game'}/>
       <Paragraph>
         {puzzleParagraph.twelfth}
       </Paragraph>
+      <ImageGroup images={tileMatchingGame}/>
     </>
   );
 };
@@ -142,6 +153,7 @@ const PuzzlePlatform = () => {
       <Paragraph>
         {puzzleParagraph.fourteen}
       </Paragraph>
+      <ImageGroup images={puzzlePlatformGame}/>
       <Paragraph>
         {puzzleParagraph.fifteen}
       </Paragraph>

@@ -1,6 +1,7 @@
 import {Typography} from "antd";
-import {sportsParagraph} from "../../data/GenresPage/sports.js";
+import {competitive, racing, sportsBasedFighting, sportsGame, sportsParagraph} from "../../data/GenresPage/sports.js";
 import TitleDivider from "../../components/VideoGamesHistoryPage/TitleDivider.jsx";
+import ImageGroup from "../../styles/ImageGroup/ImageGroup.jsx";
 
 const {Title, Paragraph} = Typography;
 
@@ -27,6 +28,7 @@ const Racing = () => {
       <Paragraph>
         {sportsParagraph.second}
       </Paragraph>
+      <ImageGroup images={racing}/>
     </>
   )
 }
@@ -38,6 +40,7 @@ const SportsGame = () => {
       <Paragraph>
         {sportsParagraph.third}
       </Paragraph>
+      <ImageGroup images={sportsGame}/>
     </>
   )
 }
@@ -49,6 +52,7 @@ const Competitive = () => {
       <Paragraph>
         {sportsParagraph.fourth}
       </Paragraph>
+      <ImageGroup images={competitive}/>
     </>
   )
 }
@@ -60,6 +64,7 @@ const SportsBaseFighting = () => {
       <Paragraph>
         {sportsParagraph.fifth}
       </Paragraph>
+      <ImageGroup images={sportsBasedFighting}/>
     </>
   )
 }

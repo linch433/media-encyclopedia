@@ -1,3 +1,15 @@
+import simcity from '../../assets/genres/simulation/simcity.jpg';
+import citiesSkyline from '../../assets/genres/simulation/cities_skyline.jpg';
+import caesar from '../../assets/genres/simulation/caesasr.jpg';
+
+import sims from '../../assets/genres/simulation/sims.jpg';
+import simLife from '../../assets/genres/simulation/simlife.png';
+import tamagotchi from '../../assets/genres/simulation/tamagotchi.jpg'
+
+import formula from '../../assets/genres/simulation/formula.jpg';
+import kerbal from '../../assets/genres/simulation/kerbal.jpg';
+import nfs from '../../assets/genres/simulation/nfs.webp';
+
 export const simulationsParagraph = {
   first: 'Імітаційні відеоігри - це різноманітна суперкатегорія ігор, які, як правило, призначені для точного моделювання\n' +
     '        аспектів реальної або вигаданої дійсності.',
@@ -64,3 +76,23 @@ export const simulationsParagraph = {
     '        транспортні засоби з попередньо визначених маршрутів і вести бій там, де їм заманеться. Піджанром автомобільного\n' +
     '        бою є бій на мехах, де транспортні засоби, як правило, включають гігантські роботизовані танки.'
 }
+
+export const constructionManagement = [
+  {src: simcity, title: 'SimCity'},
+  {src: citiesSkyline, title: 'Cities: Skylines'},
+  {src: caesar, title: 'Caesar'},
+];
+
+export const lifeSimulation = [
+  {src: sims, title: 'The Sims'},
+  {src: simLife, title: 'SimLife'},
+  {src: tamagotchi, title: 'Tamagotchi'},
+];
+
+export const vehicleSimulation = [
+  {src: nfs, title: 'Need for Speed'},
+  {src: formula, title: 'Formula 1'},
+  {src: kerbal, title: 'Kerbal Space Program'},
+];
+
+

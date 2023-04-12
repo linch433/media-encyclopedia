@@ -26,7 +26,6 @@ import pubg from '../../assets/genres/actions/pubg.gif';
 import fortnite from '../../assets/genres/actions/fortnite.gif';
 import warzone from '../../assets/genres/actions/warzone.gif';
 
-
 export const actionParagraphs = {
   first: 'Екшн-ігри - це жанр, який зосереджений на швидкій, інтенсивній та адреналіновій дії. Ці ігри вимагають\n' +
     '        від гравців хороших реакцій та координації рухів.Більшість ранніх відеоігор вважалися екшенами; сьогодні це все\n' +

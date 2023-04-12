@@ -1,3 +1,22 @@
+import colossal from '../../assets/genres/adventure/colossal.webp';
+import myst from '../../assets/genres/adventure/myst.gif';
+import longestJourney from '../../assets/genres/adventure/longest_journey.jpg';
+
+import zork from '../../assets/genres/adventure/zork.jpg';
+import aiDungeon from '../../assets/genres/adventure/ai_dungeon.jpg';
+
+import mysteryHouse from '../../assets/genres/adventure/mystery_house.webp';
+import sandsOfEgypt from '../../assets/genres/adventure/sands_of_egypt.png';
+
+import aceAttorney from '../../assets/genres/adventure/ace_attorney.jpg';
+import professorLayton from '../../assets/genres/adventure/professor_layton.jpg';
+
+import residentEvil from '../../assets/genres/adventure/resident_evil.jpg';
+import detroit from '../../assets/genres/adventure/detroit.jpg';
+
+import shenmue from '../../assets/genres/adventure/shenmue.gif';
+import shadowOfMemories from '../../assets/genres/adventure/shadow_of_memory.jpg';
+
 export const adventuresParagraph = {
   first: 'Пригодницькі ігри були одними з перших створених ігор, починаючи з текстової пригоди Colossal Cave Adventure у\n' +
     '        1970-х роках. Ця гра спочатку називалася просто "Пригода" і є тезкою жанру. Згодом у жанрі з\'явилася графіка, а\n' +
@@ -58,3 +77,34 @@ export const adventuresParagraph = {
     '        Yakuza у 2005 році. Вони доповнили традиційний пригодницький геймплей деякими атрибутами, які частіше\n' +
     '        асоціюються з екшен-іграми, наприклад, свободою рухів і поведінкою, заснованою на фізиці.'
 };
+
+export const adventureGames = [
+  {src: colossal, title: 'Colossal Cave Adventure'},
+  {src: myst, title: 'Myst'},
+  {src: longestJourney, title: 'The Longest Journey'},
+];
+
+export const textAdventure = [
+  {src: zork, title: 'Zork'},
+  {src: aiDungeon, title: 'AI Dungeon'},
+];
+
+export const graphicAdventure = [
+  {src: mysteryHouse, title: 'Mystery House'},
+  {src: sandsOfEgypt, title: 'Sands of Egypt'},
+];
+
+export const visualNovels = [
+  {src: aceAttorney, title: 'Ace Attorney'},
+  {src: professorLayton, title: 'Professor Layton'},
+];
+
+export const interactiveMovie = [
+  {src: residentEvil, title: 'Resident Evil'},
+  {src: detroit, title: 'Detroit: Become Human'},
+];
+
+export const realTime3DAdventures = [
+  {src: shenmue, title: 'Shenmue'},
+  {src: shadowOfMemories, title: 'Shadow of Memories'},
+]

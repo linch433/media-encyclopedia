@@ -1,6 +1,14 @@
 import {Typography} from "antd";
-import {rolePlayingParagraph} from "../../data/GenresPage/rolePlaying.js";
+import {
+  actionRpg,
+  firstPersonRpg,
+  mmoRpg, monsterTamer,
+  rogueLike,
+  rolePlayingParagraph,
+  sandBoxRpg
+} from "../../data/GenresPage/rolePlaying.js";
 import TitleDivider from "../../components/VideoGamesHistoryPage/TitleDivider.jsx";
+import ImageGroup from "../../styles/ImageGroup/ImageGroup.jsx";
 
 const {Title, Paragraph} = Typography;
 
@@ -30,6 +38,7 @@ const ActionRpg = () => {
       <Paragraph>
         {rolePlayingParagraph.second}
       </Paragraph>
+      <ImageGroup images={actionRpg}/>
     </>
   );
 };
@@ -41,6 +50,7 @@ const MmoRpg = () => {
       <Paragraph>
         {rolePlayingParagraph.third}
       </Paragraph>
+      <ImageGroup images={mmoRpg}/>
     </>
   );
 };
@@ -52,6 +62,7 @@ const RogueLike = () => {
       <Paragraph>
         {rolePlayingParagraph.fourth}
       </Paragraph>
+      <ImageGroup images={rogueLike}/>
     </>
   );
 };
@@ -74,6 +85,7 @@ const SandboxRpg = () => {
       <Paragraph>
         {rolePlayingParagraph.sixth}
       </Paragraph>
+      <ImageGroup images={sandBoxRpg}/>
     </>
   );
 };
@@ -88,6 +100,7 @@ const FirstPersonRpg = () => {
       <Paragraph>
         {rolePlayingParagraph.eighth}
       </Paragraph>
+      <ImageGroup images={firstPersonRpg}/>
     </>
   );
 };
@@ -99,6 +112,7 @@ const MonsterTamer = () => {
       <Paragraph>
         {rolePlayingParagraph.ninth}
       </Paragraph>
+      <ImageGroup images={monsterTamer}/>
     </>
   );
 };

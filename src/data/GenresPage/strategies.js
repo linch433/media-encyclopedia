@@ -1,9 +1,51 @@
+import civilization from '../../assets/genres/strategic/civilization.jpg';
+import goldenAge from '../../assets/genres/strategic/goldenAge.webp';
+import galactivCivilizations from '../../assets/genres/strategic/galactic_civilizations.jpg';
+
+import pocketTanks from '../../assets/genres/strategic/pocket_tanks.webp';
+import hogsOfWar from '../../assets/genres/strategic/hogs_of_war.jpg';
+import worms from '../../assets/genres/strategic/worms.jpg';
+
+import dotaAutoChess from '../../assets/genres/strategic/dota_auto_chess.jpg';
+import teamfightTactics from '../../assets/genres/strategic/tft1.png';
+import hearthstone from '../../assets/genres/strategic/hearthstone.webp';
+
+import lol from '../../assets/genres/strategic/lol.jpg';
+import dota from '../../assets/genres/strategic/dota2.jpg';
+import hots from '../../assets/genres/strategic/hots.jpg';
+
+import starcraft from '../../assets/genres/strategic/starcraft.jpg';
+import ageOfEmpiers from '../../assets/genres/strategic/age_of_empire.webp';
+import companyOfHeroes from '../../assets/genres/strategic/company_of_heroes.jpg';
+
+import warhammer from '../../assets/genres/strategic/warhammer.jpg';
+import worldInConflict from '../../assets/genres/strategic/world_in_conflict.jpg';
+import closeCombat from '../../assets/genres/strategic/close_combat.jpg';
+
+import defenceOfArdania from '../../assets/genres/strategic/Defenders_of_Ardania_2.jpeg';
+import plantsVsZombies from '../../assets/genres/strategic/plants-v-zombies.jpg';
+import arknights from '../../assets/genres/strategic/Arknights.png';
+
+import heroesOfMight from '../../assets/genres/strategic/heroes_might_and_magic.jpg';
+import makingHistory from '../../assets/genres/strategic/making_history.jpg';
+import masterOfOrion from '../../assets/genres/strategic/master_of_orion.jpg';
+
+import jaggedAlliance from '../../assets/genres/strategic/jagged_alliance.jpg';
+import xCom from '../../assets/genres/strategic/x_com.webp';
+import finalFantasyTactics from '../../assets/genres/strategic/final_fantasy_tactics.jpg';
+
+import panzer from '../../assets/genres/strategic/panzer_general.png';
+import tacOps from '../../assets/genres/strategic/tac_ops.jpg';
+
+import heroesOfIron from '../../assets/genres/strategic/heroes_of_iron.jpg';
+import europaUniversalis from '../../assets/genres/strategic/europa_universalis.jpg';
+
 export const strategiesParagraph = {
   first: 'Стратегічні відеоігри зосереджуються на ігровому процесі, що вимагає ретельного та вмілого мислення і планування\n' +
     '        для досягнення перемоги, а масштаби дій варіюються від світового панування до тактики на основі загону. "У\n' +
     '        більшості стратегічних відеоігор, - каже Ендрю Роллінгс, - гравцеві надається богоподібний погляд на ігровий\n' +
     '        світ, який опосередковано контролює юніти під його командуванням". Роллінгс також зазначає, що "походження\n' +
-    '        стратегічних ігор сягає корінням у їхніх близьких родичів - настільні ігри"[54]. Стратегічні відеоігри, як\n' +
+    '        стратегічних ігор сягає корінням у їхніх близьких родичів - настільні ігри". Стратегічні відеоігри, як\n' +
     '        правило, приймають одну з чотирьох архетипових форм, залежно від того, чи є гра покроковою, чи в реальному часі,\n' +
     '        а також від того, на чому зосереджено увагу в грі - на стратегії чи тактиці. Стратегічні ігри в реальному часі\n' +
     '        часто є іграми з вибором декількох юнітів (можна вибрати декількох ігрових персонажів одночасно для виконання\n' +
@@ -51,7 +93,7 @@ export const strategiesParagraph = {
     '        of War, Company of Heroes, Command and Conquer і Dune II (по суті, перша RTS-гра). За межами ПК дуже мало\n' +
     '        стратегічних ігор працюють у реальному часі; кілька прикладів - Battle for Middle-earth II, Pikmin і Halo Wars.\n' +
     '        Ще менше використовують фізичні фігури, наприклад, Icehouse.',
-  eighth: 'Тактика в реальному часі (скорочено RTT[67], рідше - "стратегія в реальному часі з фіксованими\n' +
+  eighth: 'Тактика в реальному часі (скорочено RTT, рідше - "стратегія в реальному часі з фіксованими\n' +
     '        підрозділами") - це піджанр тактичних військових ігор, що граються в реальному часі, імітуючи міркування та\n' +
     '        обставини оперативної війни та військової тактики. Вона також іноді розглядається як піджанр стратегії в\n' +
     '        реальному часі, і тому в цьому контексті може існувати як елемент ігрового процесу або як основа для всієї гри.\n' +
@@ -87,3 +129,67 @@ export const strategiesParagraph = {
     '        стратегії на рівні пересування та використання ресурсів цілої національної держави або імперії. Прикладом цього\n' +
     '        є франшиза Hearts of Iron.',
 }
+
+export const fourXGame = [
+  {src: civilization, title: 'Sid Meier\'s Civilization'},
+  {src: goldenAge, title: 'Golden Age of Civilizations'},
+  {src: galactivCivilizations, title: 'Galactic Civilizations'},
+];
+
+export const artilleryGame = [
+  {src: pocketTanks, title: 'Pocket Tanks'},
+  {src: hogsOfWar, title: 'Hogs of War'},
+  {src: worms, title: 'Worms'},
+];
+
+export const autoChess = [
+  {src: dotaAutoChess, title: 'Dota Auto Chess'},
+  {src: teamfightTactics, title: 'Teamfight Tactics'},
+  {src: hearthstone, title: 'Hearthstone Battlegrounds'},
+];
+
+export const mobaArts = [
+  {src: lol, title: 'League of Legends'},
+  {src: dota, title: 'Dota 2'},
+  {src: hots, title: 'Heroes of the Storm'},
+];
+
+export const realTimeStrategy = [
+  {src: starcraft, title: 'StarCraft'},
+  {src: ageOfEmpiers, title: 'Age of Empire'},
+  {src: companyOfHeroes, title: 'Company of Heroes'},
+];
+
+export const realTimeTactics = [
+  {src: warhammer, title: 'Warhammer: Dark Omen'},
+  {src: worldInConflict, title: 'World in Conflict'},
+  {src: closeCombat, title: 'Close Combat'},
+];
+
+export const towerDefense = [
+  {src: defenceOfArdania, title: 'Defenders of Ardania'},
+  {src: plantsVsZombies, title: 'Plants vs Zombies'},
+  {src: arknights, title: 'Arknights'},
+];
+
+export const turnBasedStrategy = [
+  {src: heroesOfMight, title: 'Heroes of Might and Magic'},
+  {src: makingHistory, title: 'Making History'},
+  {src: masterOfOrion, title: 'Master of Orion'},
+];
+
+export const turnBasedTactics = [
+  {src: jaggedAlliance, title: 'Jagged Alliance'},
+  {src: xCom, title: 'X-COM'},
+  {src: finalFantasyTactics, title: 'Final Fantasy Tactics'},
+];
+
+export const wargame = [
+  {src: panzer, title: 'Panzer'},
+  {src: tacOps, title: 'Tactical Ops'},
+];
+
+export const grandStrategyWargame = [
+  {src: heroesOfIron, title: 'Heroes of Iron'},
+  {src: europaUniversalis, title: 'Europa Universalis'},
+]

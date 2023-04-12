@@ -1,3 +1,24 @@
+import diablo from '../../assets/genres/rolePlaying/diablo.jpg';
+import dragonSlayer from '../../assets/genres/rolePlaying/dragonSlayer.jpg';
+import ys from '../../assets/genres/rolePlaying/ys.jpg';
+
+import runescape from '../../assets/genres/rolePlaying/runescape.jpg';
+import wow from '../../assets/genres/rolePlaying/wow.jpg';
+import tera from '../../assets/genres/rolePlaying/tera.jpg';
+import aion from '../../assets/genres/rolePlaying/aion.jpg';
+
+import rogue from '../../assets/genres/rolePlaying/rogue.png';
+
+import wasteland from '../../assets/genres/rolePlaying/wasteland.jpg';
+import deusEx from '../../assets/genres/rolePlaying/deus_ex.jpg';
+import tes from '../../assets/genres/rolePlaying/teos.webp';
+
+import wizardy from '../../assets/genres/rolePlaying/wizardy.jpg';
+import etrian from '../../assets/genres/rolePlaying/etrian.jpg';
+import elminage from '../../assets/genres/rolePlaying/elminage.jpg';
+
+import pokemon from '../../assets/genres/rolePlaying/pokemon.jpg';
+
 export const rolePlayingParagraph = {
   first: 'Рольові відеоігри беруть свій геймплей з традиційних настільних рольових ігор, таких як Dungeons & Dragons. У\n' +
     '        більшості таких ігор гравець виступає в ролі персонажа, який зростає в силі та досвіді протягом гри. Долаючи\n' +
@@ -72,3 +93,45 @@ export const rolePlayingParagraph = {
     '        часто можна вирощувати або розводити, щоб створювати сильніших монстрів або збільшувати їхні здібності в бою.\n' +
     '        Прикладом гри про приборкувачів монстрів є Покемони.'
 }
+
+export const actionRpg = [
+  {src: diablo, title: 'Diablo'},
+  {src: dragonSlayer, title: 'Dragon Slayer'},
+  {src: ys, title: 'YS'},
+];
+
+export const mmoRpg = [
+  {src: runescape, title: 'Runescape'},
+  {src: wow, title: 'World of Warcraft'},
+  {src: tera, title: 'TERA'},
+  {src: aion, title: 'Aion'},
+];
+
+export const rogueLike = [
+  {src: rogue, title: 'Rogue'}
+];
+
+export const sandBoxRpg = [
+  {src: wasteland, title: 'Wasteland'},
+  {src: deusEx, title: 'Deus Ex'},
+  {src: tes, title: 'The Elder Scrolls'},
+];
+
+export const firstPersonRpg = [
+  {src: wizardy, title: 'Wizardy'},
+  {src: etrian, title: 'Etrian Odyssey'},
+  {src: elminage, title: 'Elminage'},
+];
+
+export const monsterTamer = [
+  {src: pokemon, title: 'Pokemon'}
+];
+
+
+
+
+
+
+
+
+

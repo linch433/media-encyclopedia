@@ -1,3 +1,16 @@
+import granTurismo from '../../assets/genres/sports/grandTurismo.gif';
+import marioKart from '../../assets/genres/sports/mario_kart.gif';
+import forza from '../../assets/genres/sports/forza.gif';
+
+import fifa from '../../assets/genres/sports/fifa.gif';
+import nbaJam from '../../assets/genres/sports/nba_jam.gif';
+import maddenNfl from '../../assets/genres/sports/madden_nfl.gif';
+
+import rocketLeague from '../../assets/genres/sports/rocket league.gif';
+
+import ufc from '../../assets/genres/sports/ufc.gif';
+import wwe from '../../assets/genres/sports/wwe.gif';
+
 export const sportsParagraph = {
   first: 'Спорт - це відеоігри, які імітують спортивні або аркадні види спорту. Командою (командами) суперників можуть\n' +
     '        керувати інші реальні люди або штучний інтелект.',
@@ -18,3 +31,26 @@ export const sportsParagraph = {
     '        реалістичніші, ніж у традиційних файтингах (хоча ступінь реалістичності може сильно відрізнятися), і в багатьох\n' +
     '        з них є реальні франшизи або бійці. Прикладами цього є серії Fight Night, UFC та WWE 2K.',
 }
+
+export const racing = [
+  {src: granTurismo, title: 'Gran Turismo Sport'},
+  {src: marioKart, title: 'Mario Kart'},
+  {src: forza, title: 'Forza Horizon'},
+];
+
+export const sportsGame = [
+  {src: fifa, title: 'FIFA'},
+  {src: nbaJam, title: 'NBA Jam'},
+  {src: maddenNfl, title: 'Madden NFL'},
+];
+
+export const competitive = [
+  {src: rocketLeague, title: 'Rocket League'},
+];
+
+export const sportsBasedFighting = [
+  {src: ufc, title: 'UFC'},
+  {src: wwe, title: 'WWE 2K'},
+]
+
+

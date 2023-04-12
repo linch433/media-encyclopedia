@@ -1,6 +1,12 @@
 import {Typography} from "antd";
-import {simulationsParagraph} from "../../data/GenresPage/simulations.js";
+import {
+  constructionManagement,
+  lifeSimulation,
+  simulationsParagraph,
+  vehicleSimulation
+} from "../../data/GenresPage/simulations.js";
 import TitleDivider from "../../components/VideoGamesHistoryPage/TitleDivider.jsx";
+import ImageGroup from "../../styles/ImageGroup/ImageGroup.jsx";
 
 const {Title, Paragraph} = Typography;
 
@@ -32,6 +38,7 @@ const ConstructionAndManagement = () => {
       <Paragraph>
         {simulationsParagraph.fourth}
       </Paragraph>
+      <ImageGroup images={constructionManagement}/>
     </>
   );
 };
@@ -55,6 +62,7 @@ const LifeSimulation = () => {
       <Paragraph>
         {simulationsParagraph.ninth}
       </Paragraph>
+      <ImageGroup images={lifeSimulation}/>
     </>
   );
 };
@@ -81,6 +89,7 @@ const VehicleSimulation = () => {
       <Paragraph>
         {simulationsParagraph.fifteen}
       </Paragraph>
+      <ImageGroup images={vehicleSimulation}/>
     </>
   );
 };

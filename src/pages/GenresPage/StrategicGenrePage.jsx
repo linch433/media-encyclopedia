@@ -1,6 +1,14 @@
 import {Typography} from "antd";
-import {strategiesParagraph} from "../../data/GenresPage/strategies.js";
+import {
+  artilleryGame,
+  autoChess,
+  fourXGame, grandStrategyWargame,
+  mobaArts,
+  realTimeStrategy, realTimeTactics,
+  strategiesParagraph, towerDefense, turnBasedStrategy, turnBasedTactics, wargame
+} from "../../data/GenresPage/strategies.js";
 import TitleDivider from "../../components/VideoGamesHistoryPage/TitleDivider.jsx";
+import ImageGroup from "../../styles/ImageGroup/ImageGroup.jsx";
 
 const {Title, Paragraph} = Typography;
 
@@ -12,7 +20,6 @@ const StrategicGenrePage = () => {
       <Paragraph>
         {strategiesParagraph.first}
       </Paragraph>
-      
       <FourXGames/>
       <ArtilleryGames/>
       <AutoBattler/>
@@ -35,6 +42,7 @@ const FourXGames = () => {
       <Paragraph>
         {strategiesParagraph.second}
       </Paragraph>
+      <ImageGroup images={fourXGame}/>
     </>
   );
 };
@@ -46,6 +54,7 @@ const ArtilleryGames = () => {
       <Paragraph>
         {strategiesParagraph.third}
       </Paragraph>
+      <ImageGroup images={artilleryGame}/>
     </>
   );
 };
@@ -57,6 +66,7 @@ const AutoBattler = () => {
       <Paragraph>
         {strategiesParagraph.fourth}
       </Paragraph>
+      <ImageGroup images={autoChess}/>
     </>
   );
 };
@@ -71,6 +81,7 @@ const MobaArts = () => {
       <Paragraph>
         {strategiesParagraph.sixth}
       </Paragraph>
+      <ImageGroup images={mobaArts}/>
     </>
   );
 };
@@ -82,6 +93,7 @@ const RealTimeStrategy = () => {
       <Paragraph>
         {strategiesParagraph.seventh}
       </Paragraph>
+      <ImageGroup images={realTimeStrategy}/>
     </>
   );
 };
@@ -93,6 +105,7 @@ const RealTimeTactics = () => {
       <Paragraph>
         {strategiesParagraph.eighth}
       </Paragraph>
+      <ImageGroup images={realTimeTactics}/>
     </>
   );
 };
@@ -104,6 +117,7 @@ const TowerDefence = () => {
       <Paragraph>
         {strategiesParagraph.ninth}
       </Paragraph>
+      <ImageGroup images={towerDefense}/>
     </>
   );
 };
@@ -118,6 +132,7 @@ const TurnBasedStrategy = () => {
       <Paragraph>
         {strategiesParagraph.eleventh}
       </Paragraph>
+      <ImageGroup images={turnBasedStrategy}/>
     </>
   );
 };
@@ -129,6 +144,7 @@ const TurnBasedTactics = () => {
       <Paragraph>
         {strategiesParagraph.twelfth}
       </Paragraph>
+      <ImageGroup images={turnBasedTactics}/>
     </>
   );
 };
@@ -140,6 +156,7 @@ const Wargame = () => {
       <Paragraph>
         {strategiesParagraph.thirteen}
       </Paragraph>
+      <ImageGroup images={wargame}/>
     </>
   );
 };
@@ -151,6 +168,7 @@ const GrandStrategyWargame = () => {
       <Paragraph>
         {strategiesParagraph.fourteen}
       </Paragraph>
+      <ImageGroup images={grandStrategyWargame}/>
     </>
   );
 };

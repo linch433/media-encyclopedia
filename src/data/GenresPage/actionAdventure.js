@@ -1,3 +1,9 @@
+import ax2 from '../../assets/genres/actionAdventure/ax-2.jpg';
+import silentHill from '../../assets/genres/actionAdventure/silent-hill.jpg';
+
+import metroid from '../../assets/genres/actionAdventure/metroid.jpg';
+import castelvania from '../../assets/genres/actionAdventure/castelvania.jpg';
+
 export const actionAdventureParagraph = {
   first: 'Хоча пригодницькі ігри можна поділити на екшн та пригодницькі, вони поєднують у собі елементи обох цих жанрів,\n' +
     '        як правило, з довготривалими перешкодами, які потрібно подолати, використовуючи інструмент або предмет як важіль\n' +
@@ -34,3 +40,13 @@ export const actionAdventureParagraph = {
     '        кроків по карті. Метроїдвані зазвичай не мають лінійного ігрового процесу і часто передбачають багато\n' +
     '        ретроспекцій - особливо після отримання нових здібностей чи інструментів.'
 }
+
+export const survivalHorror = [
+  {src: ax2, title: 'AX-2: Uchuu Yusousen Nostromo'},
+  {src: silentHill, title: 'Silent Hill'},
+];
+
+export const metroidvania = [
+  {src: metroid, title: 'Metroid'},
+  {src: castelvania, title: 'Castelvania'},
+]

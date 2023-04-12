@@ -44,7 +44,7 @@ const MainLayout = () => {
         <Route path="/companies" element={<CompaniesPage/>}/>
         <Route path="/glossary" element={<GlossaryPage/>}/>
         <Route path="/references" element={<ReferencesPage/>}/>
-        <Route path='/genres/action' element={<ActionGenrePage/>}/>
+        <Route path='/genres/actions' element={<ActionGenrePage/>}/>
         <Route path='/genres/adventure' element={<AdventureGenrePage/>}/>
         <Route path='/genres/sports' element={<SportsGenrePage/>}/>
         <Route path='/genres/strategic' element={<StrategicGenrePage/>}/>

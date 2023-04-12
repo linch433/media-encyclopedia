@@ -1,6 +1,7 @@
 import {Typography} from "antd";
-import {actionAdventureParagraph} from "../../data/GenresPage/actionAdventure.js";
+import {actionAdventureParagraph, metroidvania, survivalHorror} from "../../data/GenresPage/actionAdventure.js";
 import TitleDivider from "../../components/VideoGamesHistoryPage/TitleDivider.jsx";
+import ImageGroup from "../../styles/ImageGroup/ImageGroup.jsx";
 
 const {Title, Paragraph} = Typography;
 
@@ -34,6 +35,7 @@ const SurvivalHorror = () => {
       <Paragraph>
         {actionAdventureParagraph.fifth}
       </Paragraph>
+      <ImageGroup images={survivalHorror}/>
     </>
   );
 };
@@ -45,6 +47,7 @@ const Metroidvania = () => {
       <Paragraph>
         {actionAdventureParagraph.sixth}
       </Paragraph>
+      <ImageGroup images={metroidvania}/>
     </>
   );
 };

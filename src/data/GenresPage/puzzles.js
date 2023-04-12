@@ -1,3 +1,21 @@
+import arkanoid from '../../assets/genres/puzzle/arkanoid.jpg';
+import breakout from '../../assets/genres/puzzle/breakout.webp';
+
+import portal from '../../assets/genres/puzzle/portal.jpg';
+import cutTheRope from '../../assets/genres/puzzle/cut_the_rope.jpg';
+import worldOfGoo from '../../assets/genres/puzzle/world_of_goo.webp';
+
+import limbo from '../../assets/genres/puzzle/limbo.jpg';
+import dig from '../../assets/genres/puzzle/dig.jpg';
+import monumentValley from '../../assets/genres/puzzle/monumentValley.webp';
+
+import tetris from '../../assets/genres/puzzle/tetris.png';
+import candyCrashSaga from '../../assets/genres/puzzle/candyCrushSaga.jpg';
+import zuma from '../../assets/genres/puzzle/zuma.jpg';
+
+import doki from '../../assets/genres/puzzle/doki.jpg';
+import door from '../../assets/genres/puzzle/door_door.gif';
+
 export const puzzleParagraph = {
   first: 'Головоломки - для тих, хто любить застосовувати свій мозок і знаходить задоволення у вирішенні головоломок. Чи\n' +
     '        то прості адаптації реальних головоломок, як-от судоку, чи повноцінні ігри-головоломки, призначені для вивчення\n' +
@@ -66,3 +84,34 @@ export const puzzleParagraph = {
   seventeen: 'Wario Land 2 перенесла серію Wario в жанр головоломки, усунувши елемент смерті і додавши тимчасові травми, такі\n' +
     '        як розчавлювання або підпал, і спеціалізовані здібності',
 }
+
+export const breakoutClone = [
+  {src: arkanoid, title: 'Arkanoid'},
+  {src: breakout, title: 'Breakout'},
+];
+
+export const physicsGame = [
+  {src: portal, title: 'Portal'},
+  {src: cutTheRope, title: 'Cut the Rope'},
+  {src: worldOfGoo, title: 'World of Goo'},
+];
+
+export const exploration = [
+  {src: limbo, title: 'Limbo'},
+  {src: dig, title: 'The Dig'},
+  {src: monumentValley, title: 'Monument Valley'},
+];
+
+export const tileMatchingGame = [
+  {src: tetris, title: 'Tetris'},
+  {src: candyCrashSaga, title: 'Candy Crush Saga'},
+  {src: zuma, title: 'Zuma'},
+];
+
+export const puzzlePlatformGame = [
+  {src: doki, title: 'Sega\'s Doki Doki Penguin Land'},
+  {src: door, title: 'Enix\'s Door Door'},
+];
+
+
+
