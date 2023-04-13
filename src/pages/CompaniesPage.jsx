@@ -11,51 +11,187 @@ const CompaniesPage = () => {
       <Paragraph>
         {gameCompaniesParagraph.first}
       </Paragraph>
+
+      <ActivisionBlizzard/>
+      <ElectronicArts/>
+      <Nintendo/>
+      <Ubisoft/>
+      <RockstarGames/>
+      <BethesdaSoftworks/>
+      <SquareEnix/>
+      <NaughtyDog/>
+      <ValveCorporation/>
+      <CDProjectRed/>
+      <Bioware/>
+    </Typography>
+  );
+};
+
+const ActivisionBlizzard = () => {
+  return (
+    <>
       <TitleDivider title={'Activision Blizzard'}/>
       <Paragraph>
         {gameCompaniesParagraph.second}
       </Paragraph>
-      <TitleDivider title={'Electronic Arts'}/>
       <Paragraph>
         {gameCompaniesParagraph.third}
       </Paragraph>
-      <TitleDivider title={'Nintendo'}/>
+    </>
+  );
+};
+
+const ElectronicArts = () => {
+  return (
+    <>
+      <TitleDivider title={'Electronic Arts'}/>
       <Paragraph>
         {gameCompaniesParagraph.fourth}
       </Paragraph>
-      <TitleDivider title={'Ubisoft'}/>
       <Paragraph>
         {gameCompaniesParagraph.fifth}
       </Paragraph>
-      <TitleDivider title={'Rockstar Games'}/>
+    </>
+  );
+};
+
+const Nintendo = () => {
+  return (
+    <>
+      <TitleDivider title={'Nintendo'}/>
       <Paragraph>
         {gameCompaniesParagraph.sixth}
       </Paragraph>
-      <TitleDivider title={'Bethesda Softworks'}/>
       <Paragraph>
         {gameCompaniesParagraph.seventh}
       </Paragraph>
-      <TitleDivider title={'Square Enix'}/>
       <Paragraph>
         {gameCompaniesParagraph.eighth}
       </Paragraph>
-      <TitleDivider title={'Naughty Dog'}/>
       <Paragraph>
         {gameCompaniesParagraph.ninth}
       </Paragraph>
-      <TitleDivider title={'Valve Corporation'}/>
+    </>
+  );
+};
+
+const Ubisoft = () => {
+  return (
+    <>
+      <TitleDivider title={'Ubisoft'}/>
       <Paragraph>
         {gameCompaniesParagraph.tenth}
       </Paragraph>
-      <TitleDivider title={'CD Projekt Red'}/>
+    </>
+  );
+};
+
+const RockstarGames = () => {
+  return (
+    <>
+      <TitleDivider title={'Rockstar Games'}/>
       <Paragraph>
         {gameCompaniesParagraph.eleventh}
       </Paragraph>
-      <TitleDivider title={'Bioware'}/>
       <Paragraph>
         {gameCompaniesParagraph.twelfth}
       </Paragraph>
-    </Typography>
+      <Paragraph>
+        {gameCompaniesParagraph.thirteen}
+      </Paragraph>
+    </>
+  );
+};
+
+
+const BethesdaSoftworks = () => {
+  return (
+    <>
+      <TitleDivider title={'Bethesda Softworks'}/>
+      <Paragraph>
+        {gameCompaniesParagraph.fourteen}
+      </Paragraph>
+    </>
+  );
+};
+
+const SquareEnix = () => {
+  return (
+    <>
+      <TitleDivider title={'Square Enix'}/>
+      <Paragraph>
+        {gameCompaniesParagraph.fifteen}
+      </Paragraph>
+      <Paragraph>
+        {gameCompaniesParagraph.sixteen}
+      </Paragraph>
+      <Paragraph>
+        {gameCompaniesParagraph.seventeen}
+      </Paragraph>
+    </>
+  );
+};
+
+const NaughtyDog = () => {
+  return (
+    <>
+      <TitleDivider title={'Naughty Dog'}/>
+      <Paragraph>
+        {gameCompaniesParagraph.eighteen}
+      </Paragraph>
+      <Paragraph>
+        {gameCompaniesParagraph.nineteen}
+      </Paragraph>
+      <Paragraph>
+        {gameCompaniesParagraph.twenty}
+      </Paragraph>
+    </>
+  );
+};
+
+const ValveCorporation = () => {
+  return (
+    <>
+      <TitleDivider title={'Valve Corporation'}/>
+      <Paragraph>
+        {gameCompaniesParagraph.twentyOne}
+      </Paragraph>
+      <Paragraph>
+        {gameCompaniesParagraph.twentyTwo}
+      </Paragraph>
+      <Paragraph>
+        {gameCompaniesParagraph.twentyThree}
+      </Paragraph>
+    </>
+  );
+};
+
+
+const CDProjectRed = () => {
+  return (
+    <>
+      <TitleDivider title={'CD Project Red'}/>
+      <Paragraph>
+        {gameCompaniesParagraph.twentyFour}
+      </Paragraph>
+      <Paragraph>
+        {gameCompaniesParagraph.twentyFive}
+      </Paragraph>
+    </>
+  );
+};
+
+const Bioware = () => {
+  return (
+    <>
+      <TitleDivider title={'Bioware'}/>
+      <Paragraph>
+        {gameCompaniesParagraph.twentySix}
+      </Paragraph>
+      <Paragraph>
+        {gameCompaniesParagraph.twentySeven}
+      </Paragraph>
+    </>
   );
 };
 
