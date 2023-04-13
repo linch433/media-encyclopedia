@@ -1,5 +1,13 @@
 import {Typography} from "antd";
+import {
+  famousDevelopersInfo,
+  kojimaPicture, kojimaWorks,
+  meierPicture, meierWorks,
+  miyamotoPicture, miyamotoWorks,
+  newellPicture, newellWorks, perssonPicture, perssonWorks
+} from "../data/famousDevelopers.js";
 import TitleDivider from "../components/VideoGamesHistoryPage/TitleDivider.jsx";
+import ImageGroup from "../styles/ImageGroup/ImageGroup.jsx";
 
 const {Title, Paragraph} = Typography;
 
@@ -8,101 +16,100 @@ const FamousDevelopersPage = () => {
     <Typography>
       <Title>Відомі розробники</Title>
       <Paragraph>
-        "Відомі розробники відеоігор" - це група талановитих людей, які стали відомими завдяки своїй роботі в індустрії
-        відеоігор. Вони є ключовими фігурами у своїй галузі та внесли значний внесок у розвиток цієї індустрії. Відомі
-        розробники відеоігор здебільшого працюють у великих студіях, таких як Blizzard Entertainment, Electronic Arts
-        (EA), Ubisoft, Rockstar Games, Bethesda Softworks, Square Enix, Naughty Dog, Valve Corporation, CD Projekt Red
-        та Bioware.
+        {famousDevelopersInfo.first}
       </Paragraph>
+      <MiyamotoParagraph/>
+      <KojimaParagraph/>
+      <MeierParagraph/>
+      <NewellParagraph/>
+      <PerssonParagraph/>
+    </Typography>
+  );
+};
+
+const MiyamotoParagraph = () => {
+  return (
+    <>
       <TitleDivider title={'Shigeru Miyamoto'}/>
       <Paragraph>
-        Шіґеру Міямото (яп. 宮本 茂, ім'я при народженні: Міямото Шіґеру, народився 16 листопада 1952 року) - японський
-        дизайнер відеоігор, продюсер та ігровий директор компанії Nintendo, де він є одним з її представницьких
-        директорів. Широко відомий як один з найдосконаліших і найвпливовіших дизайнерів в історії відеоігор, він є
-        творцем деяких з найвідоміших і найбільш продаваних ігрових франшиз усіх часів, включаючи Mario, The Legend of
-        Zelda, Donkey Kong, Star Fox і Pikmin.
+        {famousDevelopersInfo.second}
+      </Paragraph>
+      <ImageGroup images={miyamotoPicture}/>
+      <Paragraph>
+        {famousDevelopersInfo.third}
       </Paragraph>
       <Paragraph>
-        Міямото народився в Сонобе, Кіото, і закінчив Муніципальний коледж промислових мистецтв Каназави. Спочатку він
-        прагнув зробити кар'єру художника манґи, аж поки не захопився відеоіграми. За допомогою батька він приєднався до
-        компанії Nintendo у 1977 році після того, як вразив своїми іграшками тодішнього президента Хіроші Ямаучі. Він
-        допомагав створювати мистецтво для аркадної гри Sheriff, а згодом отримав завдання розробити нову аркадну
-        гру, що призвело до появи у 1981 році гри Donkey Kong.
+        {famousDevelopersInfo.fourth}
       </Paragraph>
-      <Paragraph>
-        Платформерна гра Super Mario Bros. (1985) та пригодницька гра The Legend of Zelda (1986) допомогли Nintendo
-        Entertainment System домінувати на ринку консольних ігор. Його ігри були флагманами кожної ігрової консолі
-        Nintendo, починаючи з аркадних автоматів кінця 1970-х і до сьогодні. Він керував відділом програмного
-        забезпечення Nintendo Entertainment Analysis & Development, який розробив багато ігор Nintendo, і відіграв
-        важливу роль у створенні інших впливових ігор, таких як Pokémon Red and Blue та Metroid Prime. Після смерті
-        президента Nintendo Сатору Івати в липні 2015 року Міямото став виконуючим обов'язки президента разом з Ґенйо
-        Такедою, поки через кілька місяців не був офіційно призначений "творчим співробітником".
-      </Paragraph>
+      <ImageGroup images={miyamotoWorks}/>
+    </>
+  );
+};
+
+const KojimaParagraph = () => {
+  return (
+    <>
       <TitleDivider title={'Hideo Kojima'}/>
       <Paragraph>
-        Хідео Кодзіма (яп. 小島 秀夫, Кодзіма Хідео, народився 24 серпня 1963 року) - японський дизайнер відеоігор,
-        режисер, продюсер і письменник. Вважається автором відеоігор. У дитинстві та юності захоплювався
-        пригодницьким кіно та літературою. У 1986 році його найняла компанія Konami, для якої він розробив і написав гру
-        Metal Gear (1987) для приставки MSX2, яка заклала основи стелс-ігор і серії Metal Gear, його найвідоміших і
-        найцінніших творів. Він також відомий як продюсер серії Zone of the Enders, а також як автор і дизайнер Snatcher
-        (1988) і Policenauts (1994), графічних пригодницьких ігор, що мають кінематографічну презентацію.
+        {famousDevelopersInfo.fifth}
       </Paragraph>
+      <ImageGroup images={kojimaPicture}/>
       <Paragraph>
-        Кодзіма заснував Kojima Productions у складі Konami у 2005 році, а у 2011 році був призначений
-        віце-президентом Konami Digital Entertainment.[4] Kojima Productions відокремилася від Konami у 2015 році,
-        ставши незалежною студією. Перша гра його студії без участі Konami, Death Stranding, вийшла у 2019 році[5].
+        {famousDevelopersInfo.sixth}
       </Paragraph>
+      <ImageGroup images={kojimaWorks}/>
+    </>
+  );
+};
+
+const MeierParagraph = () => {
+  return (
+    <>
       <TitleDivider title={'Sid Meier'}/>
       <Paragraph>
-        Сідні К. Майєр (/ˈmaɪər/ MIRE; народився 24 лютого 1954 року) - швейцарсько-американський програміст канадського
-        походження, дизайнер і продюсер кількох стратегічних відеоігор та відеоігор-симуляторів, зокрема серії
-        Civilization. У 1982 році Майєр разом з Біллом Стілі заснував компанію MicroProse, а в 1996 році разом з Джеффом
-        Бріггсом і Брайаном Рейнольдсом став директором з творчого розвитку компанії Firaxis Games. За свій внесок в
-        індустрію відеоігор Майєр був введений до Зали слави Академії інтерактивних мистецтв і наук.
+        {famousDevelopersInfo.seventh}
       </Paragraph>
+      <ImageGroup images={meierPicture}/>
+      <ImageGroup images={meierWorks}/>
+    </>
+  );
+};
+
+const NewellParagraph = () => {
+  return (
+    <>
       <TitleDivider title={'Gabe Newell'}/>
       <Paragraph>
-        Гейб Логан Ньюелл (народився 3 листопада 1962 року), на прізвисько Гейбен - американський бізнесмен і президент
-        компанії Valve, що займається розробкою відеоігор.
+        {famousDevelopersInfo.eighth}
+      </Paragraph>
+      <ImageGroup images={newellPicture}/>
+      <Paragraph>
+        {famousDevelopersInfo.ninth}
       </Paragraph>
       <Paragraph>
-        Ньюелл народився в Колорадо і виріс у Девісі, штат Каліфорнія. На початку 1980-х він навчався в Гарвардському
-        університеті, але кинув навчання, щоб приєднатися до Microsoft, де допомагав створювати перші версії операційної
-        системи Windows. Разом з іншим співробітником, Майком Гаррінгтоном, він залишив Microsoft у 1996 році, щоб
-        заснувати Valve, і фінансував розробку їхньої першої гри, Half-Life (1998). Харрінгтон пішов у 2000 році,
-        зробивши Ньюелла єдиним власником компанії.
+        {famousDevelopersInfo.tenth}
       </Paragraph>
-      <Paragraph>
-        Ньюелл керував розвитком сервісу цифрової дистрибуції Valve Steam, який був запущений у 2003 році і до 2011 року
-        контролював більшу частину ринку завантажуваних комп'ютерних ігор. Станом на 2021 рік Ньюелл володів щонайменше
-        чвертю акцій Valve. Він є найбагатшою людиною в індустрії відеоігор і одним з найбагатших людей у США. У грудні
-        2021 року Forbes оцінив статки Ньюелла у 3,9 мільярда доларів США.
-      </Paragraph>
+      <ImageGroup images={newellWorks}/>
+    </>
+  );
+};
+
+const PerssonParagraph = () => {
+  return (
+    <>
       <TitleDivider title={'Markus Persson'}/>
       <Paragraph>
-        Маркус Олексій Перссон (швед. [ˈmǎrkɵs ˈpæ̌ːʂɔn]; нар. 1 червня 1979), також відомий як Notch -
-        шведський програміст і дизайнер відеоігор. Він найбільш відомий завдяки створенню відеогри-пісочниці Minecraft,
-        яка відтоді стала найбільш продаваною відеогрою всіх часів, а також завдяки заснуванню компанії Mojang у 2009
-        році.
+        {famousDevelopersInfo.eleventh}
+      </Paragraph>
+      <ImageGroup images={perssonPicture}/>
+      <Paragraph>
+        {famousDevelopersInfo.twelfth}
       </Paragraph>
       <Paragraph>
-        Перссон почав розробляти відеоігри в ранньому віці, створюючи ігри як професійно, так і у вільний час протягом
-        більшої частини свого життя. Він досяг величезного критичного успіху, випустивши гру Minecraft у 2009 році, яка
-        розійшлася десятимільйонним накладом до 2011 року. Він був провідним дизайнером гри до 2011 року, після
-        чого передав творчі повноваження Єнсу Бергенстену.
+        {famousDevelopersInfo.thirteen}
       </Paragraph>
-      <Paragraph>
-        У вересні 2014 року він покинув Mojang після того, як Microsoft придбала компанію за $2,5 млрд. Таким
-        чином, він став мільярдером і, як повідомляється, жив розкішно, маючи приватний літак, купивши найдорожчий на
-        той час будинок у Беверлі-Хіллз і влаштовуючи вечірки зі знаменитостями. Але він повідомляв, що почувався
-        пригніченим та ізольованим, почав робити суперечливі публічні коментарі про расу та гендер, а також підтримував
-        розвінчані теорії змови, такі як QAnon та Pizzagate, що призвело до того, що Microsoft засудила його погляди,
-        видалила згадку про Перссона з Minecraft та не запросила його на святкування десятої річниці гри у 2019 році.
-      </Paragraph>
-      <Paragraph>
-        З 2015 року він працює над окремою ігровою студією під назвою Rubberbrain.
-      </Paragraph>
-    </Typography>
+      <ImageGroup images={perssonWorks}/>
+    </>
   );
 };
 
