@@ -1,4 +1,13 @@
 import {Typography} from "antd";
+import {
+  cryEnginePictures,
+  enginesParagraphs, gameMakerPictures,
+  godotPictures, panda3dPictures, renpyPictures,
+  unityPictures,
+  unrealEnginePictures
+} from "../data/gameEngines.js";
+import TitleDivider from "../components/VideoGamesHistoryPage/TitleDivider.jsx";
+import ImageGroup from "../styles/ImageGroup/ImageGroup.jsx";
 
 const {Title, Paragraph} = Typography;
 
@@ -7,53 +16,140 @@ const EnginesPage = () => {
     <Typography>
       <Title>Ігрові двигуни</Title>
       <Paragraph>
-        "Ігрові двигуни" - це складне програмне забезпечення, яке використовується для розробки відеоігор. Ігровий рушій
-        містить різноманітні модулі та бібліотеки, які дозволяють розробникам створювати графіку, звук, фізику, штучний
-        інтелект та інші компоненти гри. Ігрові рушії розробляють великі компанії, такі як Epic Games, Unity
-        Technologies, Crytek та інші.
+        {enginesParagraphs.first}
       </Paragraph>
       <Paragraph>
-        Одним з найпопулярніших ігрових рушіїв є Unreal Engine, розроблений компанією Epic Games. Unreal Engine містить
-        багато можливостей, серед яких високоякісна графіка, різноманітні інструменти для роботи з фізикою та штучним
-        інтелектом, а також механізми для розробки багатокористувацьких ігор. Unreal Engine використовується для
-        створення таких відомих ігор, як Fortnite, Gears of War, Batman: Arkham Knight та інших.
+        {enginesParagraphs.second}
       </Paragraph>
       <Paragraph>
-        Ще одним відомим ігровим рушієм є Unity. Він дозволяє розробникам створювати ігри для різних платформ, включаючи
-        мобільні, настільні комп'ютери, консолі та віртуальну реальність. Unity містить багато інструментів, які
-        допомагають розробникам створювати якісні та захоплюючі ігри з якісною графікою та фізикою. Серед ігор,
-        створених на основі Unity, - Cuphead, Ori and the Blind Forest, Hearthstone та інші.
+        {enginesParagraphs.third}
       </Paragraph>
       <Paragraph>
-        Серед інших відомих ігрових рушіїв - CryEngine, який використовується для створення серії ігор Crysis, та id
-        Tech, який використовувався для створення серії ігор Doom та Quake.
+        {enginesParagraphs.fourth}
       </Paragraph>
       <Paragraph>
-        Ігрові рушії є важливими інструментами для розробки відеоігор, оскільки вони дозволяють розробникам створювати
-        якісні та захоплюючі ігри з високоякісною графікою, фізикою та іншими ігровими компонентами. Використання
-        ігрових рушіїв дозволяє розробникам зосередитися на творчому процесі та створенні якісних ігор замість того, щоб
-        витрачати гроші на створення власних інструментів.
+        {enginesParagraphs.fifth}
       </Paragraph>
-      <Paragraph>
-        Однією з переваг використання ігрових рушіїв є можливість створювати ігри для різних платформ за допомогою
-        одного рушія. Це дозволяє розробникам ефективно використовувати свій час і зусилля при створенні ігор для різних
-        платформ.
-      </Paragraph>
-      <Paragraph>
-        Крім того, багато ігрових рушіїв мають активні спільноти розробників і користувачів, які допомагають один одному
-        у вирішенні проблем і обмінюються досвідом.
-      </Paragraph>
-      <Paragraph>
-        Ігрові рушії також дозволяють розробникам створювати ігри з високою інтерактивністю та динамікою. Це можливо
-        завдяки використанню таких технологій, як фізичне моделювання та штучний інтелект.
-      </Paragraph>
-      <Paragraph>
-        Таким чином, ігрові рушії є важливими інструментами для розробки відеоігор. Вони дозволяють розробникам
-        створювати якісні та захоплюючі ігри з якісною графікою та фізикою, а також ефективно використовувати свій час
-        та зусилля при створенні ігор для різних платформ. Багато відомих ігор були створені за допомогою таких рушіїв,
-        як Unreal Engine, Unity, CryEngine та інших.
-      </Paragraph>
+
+      <UnrealEngine/>
+      <CryEngine/>
+      <Unity/>
+      <Godot/>
+      <GameMaker/>
+      <Panda3D/>
+      <RenPy/>
     </Typography>
+  );
+};
+
+const UnrealEngine = () => {
+  return (
+    <>
+      <TitleDivider title={'Unreal Engine'}/>
+      <Paragraph>
+        {enginesParagraphs.sixth}
+      </Paragraph>
+      <Paragraph>
+        {enginesParagraphs.seventh}
+      </Paragraph>
+      <ImageGroup images={unrealEnginePictures}/>
+    </>
+  );
+};
+
+const CryEngine = () => {
+  return (
+    <>
+      <TitleDivider title={'CryEngine'}/>
+      <Paragraph>
+        {enginesParagraphs.eighth}
+      </Paragraph>
+      <Paragraph>
+        {enginesParagraphs.ninth}
+      </Paragraph>
+      <ImageGroup images={cryEnginePictures}/>
+    </>
+  );
+};
+
+const Unity = () => {
+  return (
+    <>
+      <TitleDivider title={'Unity'}/>
+      <Paragraph>
+        {enginesParagraphs.tenth}
+      </Paragraph>
+      <Paragraph>
+        {enginesParagraphs.eleventh}
+      </Paragraph>
+      <ImageGroup images={unityPictures}/>
+    </>
+  );
+};
+
+const Godot = () => {
+  return (
+    <>
+      <TitleDivider title={'Godot'}/>
+      <Paragraph>
+        {enginesParagraphs.twelfth}
+      </Paragraph>
+      <Paragraph>
+        {enginesParagraphs.thirteen}
+      </Paragraph>
+      <ImageGroup images={godotPictures}/>
+    </>
+  );
+};
+
+const GameMaker = () => {
+  return (
+    <>
+      <TitleDivider title={'GameMaker'}/>
+      <Paragraph>
+        {enginesParagraphs.fourteen}
+      </Paragraph>
+      <Paragraph>
+        {enginesParagraphs.fifteen}
+      </Paragraph>
+      <ImageGroup images={gameMakerPictures}/>
+    </>
+  );
+};
+
+const Panda3D = () => {
+  return (
+    <>
+      <TitleDivider title={'Panda3D'}/>
+      <Paragraph>
+        {enginesParagraphs.sixteen}
+      </Paragraph>
+      <Paragraph>
+        {enginesParagraphs.seventeen}
+      </Paragraph>
+      <Paragraph>
+        {enginesParagraphs.eighteen}
+      </Paragraph>
+      <Paragraph>
+        {enginesParagraphs.nineteen}
+      </Paragraph>
+      <ImageGroup images={panda3dPictures}/>
+    </>
+  );
+};
+
+const RenPy = () => {
+  return (
+    <>
+      <TitleDivider title={'Ren\'Py'}/>
+      <Paragraph>
+        {enginesParagraphs.twenty}
+      </Paragraph>
+      <Paragraph>
+        {enginesParagraphs.twentyOne}
+      </Paragraph>
+      <ImageGroup images={renpyPictures}/>
+    </>
   );
 };
 
