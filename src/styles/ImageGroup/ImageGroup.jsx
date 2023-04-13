@@ -4,6 +4,8 @@ import './imageGroupStyle.css';
 const ImageGroup = ({images}) => {
   const height = 200;
 
+  console.log(images);
+  
   return (
     <div className='image_group'>
       {images.map((image, index) => (
