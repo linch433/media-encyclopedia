@@ -1,3 +1,15 @@
+import blizzard from '../assets/gamesCompanies/blizzard.png';
+import ea from '../assets/gamesCompanies/ea.png';
+import nintendo from '../assets/gamesCompanies/nintendo.png';
+import ubisoft from '../assets/gamesCompanies/ubisoft.png';
+import rockstar from '../assets/gamesCompanies/rockstar.png';
+import bethesda from '../assets/gamesCompanies/bethesda.png';
+import square from '../assets/gamesCompanies/square.jpg';
+import naughty from '../assets/gamesCompanies/naughty.png';
+import valve from '../assets/gamesCompanies/valve.png';
+import cd from '../assets/gamesCompanies/cdProject.png';
+import bioware from '../assets/gamesCompanies/bioware.png';
+
 export const gameCompaniesParagraph = {
   first: '"Відомі компанії відеоігор" - це перелік компаній, що займаються розробкою та виданням відеоігор. Індустрія\n' +
     '        відеоігор є однією з найбільш прибуткових та швидкорозвиваючихся галузей в світі розваг. У цьому переліку\n' +
@@ -30,4 +42,48 @@ export const gameCompaniesParagraph = {
     'Після виходу The Witcher, CD Projekt працювали над портом для консолей під назвою The Witcher: White Wolf, але проблеми з розробкою та зростанням витрат ледь не привели компанію на межу банкрутства. Пізніше CD Projekt випустила The Witcher 2: Assassins of Kings у 2011 році та The Witcher 3: Wild Hunt у 2015 році, причому остання отримала різні нагороди "Гра року". У 2020 році компанія випустила Cyberpunk 2077, рольову гру на основі настільної ігрової системи Cyberpunk 2020, для якої відкрила новий підрозділ у Вроцлаві.',
   twentySix: 'BioWare - канадський розробник відеоігор, що базується в Едмонтоні, Альберта. Компанія була заснована в 1995 році новоспеченими лікарями Реєм Музикою, Грегом Зещуком та Августином Іпом, а також Трентом Остером, Брентом Остером та Марселем Зещуком. З 2007 року компанія належить американському видавництву Electronic Arts.',
   twentySeven: 'BioWare спеціалізується на рольових відеоіграх і здобула визнання завдяки розробці високо оцінених та успішних ліцензійних франшиз: Baldur\'s Gate, Neverwinter Nights та Star Wars: Knights of the Old Republic. Вони створили ще кілька успішних ігор, заснованих на оригінальній інтелектуальній власності: Нефритова імперія, серія Mass Effect та Dragon Age. У 2011 році BioWare випустила свою першу масову багатокористувацьку онлайн-рольову гру (MMORPG) "Зоряні війни: Стара республіка".'
-}
+};
+
+export const activisionBlizzardPictures = [
+  {src: blizzard, title: 'Activision Blizzard'}
+];
+
+export const electronicArtsPictures = [
+  {src: ea, title: 'Electronic Arts'}
+];
+
+export const nintendoCompPictures = [
+  {src: nintendo, title: 'Nintendo'}
+];
+
+export const ubisoftPictures = [
+  {src: ubisoft, title: 'Ubisoft'}
+];
+
+export const rockstarGamesPictures = [
+  {src: rockstar, title: 'Rockstar Games'}
+];
+
+export const bethesdaSoftworksPictures = [
+  {src: bethesda, title: 'Bethesda Softworks'}
+];
+
+export const squareEnixPictures = [
+  {src: square, title: 'Square Enix'}
+];
+
+export const naughtyDogPictures = [
+  {src: naughty, title: 'Naughty Dog'}
+];
+
+export const valveCorpPictures = [
+  {src: valve, title: 'Valve Corporation'}
+];
+
+export const cdProjectRedPictures = [
+  {src: cd, title: 'CD Project Red'}
+];
+
+export const biowarePictures = [
+  {src: bioware, title: 'Bioware'}
+]
