@@ -1,11 +1,11 @@
-.image_group {
+.image_content {
     display: grid;
     justify-content: center;
     margin-bottom: 2rem;
     gap: 1rem;
 }
 
-.image_group div {
+.image_content div {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -16,13 +16,13 @@
     height: 300px;
 }
 
-.image_title {
+.image_text {
     margin-top: 0.5rem;
     text-align: center;
 }
 
 @media only screen and (max-width: 832px) {
-    .image_group {
+    .image_content {
         display: flex;
         flex-direction: column;
         align-items: center;
