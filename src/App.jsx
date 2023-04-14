@@ -7,7 +7,7 @@ import SiderMenu from './features/layout/Sider.jsx';
 import FloatModalButton from './styles/FloatModalButton.jsx';
 
 export default function App() {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
 
   return (
     <Layout style={{height: '100vh'}}>

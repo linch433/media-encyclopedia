@@ -8,6 +8,7 @@ import {
 } from "../data/famousDevelopers.js";
 import TitleDivider from "../components/VideoGamesHistoryPage/TitleDivider.jsx";
 import ImageGroup from "../styles/ImageGroup/ImageGroup.jsx";
+import ImageSolo from "../styles/ImageGroup/ImageSolo.jsx";
 
 const {Title, Paragraph} = Typography;
 
@@ -34,7 +35,7 @@ const MiyamotoParagraph = () => {
       <Paragraph>
         {famousDevelopersInfo.second}
       </Paragraph>
-      <ImageGroup images={miyamotoPicture}/>
+      <ImageSolo images={miyamotoPicture}/>
       <Paragraph>
         {famousDevelopersInfo.third}
       </Paragraph>
@@ -53,7 +54,7 @@ const KojimaParagraph = () => {
       <Paragraph>
         {famousDevelopersInfo.fifth}
       </Paragraph>
-      <ImageGroup images={kojimaPicture}/>
+      <ImageSolo images={kojimaPicture}/>
       <Paragraph>
         {famousDevelopersInfo.sixth}
       </Paragraph>
@@ -69,7 +70,7 @@ const MeierParagraph = () => {
       <Paragraph>
         {famousDevelopersInfo.seventh}
       </Paragraph>
-      <ImageGroup images={meierPicture}/>
+      <ImageSolo images={meierPicture}/>
       <ImageGroup images={meierWorks}/>
     </>
   );
@@ -82,7 +83,7 @@ const NewellParagraph = () => {
       <Paragraph>
         {famousDevelopersInfo.eighth}
       </Paragraph>
-      <ImageGroup images={newellPicture}/>
+      <ImageSolo images={newellPicture}/>
       <Paragraph>
         {famousDevelopersInfo.ninth}
       </Paragraph>
@@ -101,7 +102,7 @@ const PerssonParagraph = () => {
       <Paragraph>
         {famousDevelopersInfo.eleventh}
       </Paragraph>
-      <ImageGroup images={perssonPicture}/>
+      <ImageSolo images={perssonPicture}/>
       <Paragraph>
         {famousDevelopersInfo.twelfth}
       </Paragraph>

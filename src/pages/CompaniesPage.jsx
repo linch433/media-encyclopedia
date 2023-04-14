@@ -7,7 +7,8 @@ import {
   nintendoCompPictures, rockstarGamesPictures, squareEnixPictures, ubisoftPictures, valveCorpPictures
 } from "../data/gamingCompanies.js";
 import ImageGroup from "../styles/ImageGroup/ImageGroup.jsx";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player/lazy";
+import ReactPlayerWrapper from "../components/ReactPlayer/ReactPlayerWrapper.jsx";
 
 const {Title, Paragraph} = Typography;
 
@@ -46,7 +47,7 @@ const ActivisionBlizzard = () => {
         {gameCompaniesParagraph.third}
       </Paragraph>
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <ReactPlayer url={'https://youtu.be/yaqeZ9Snt4E'} controls={true} height={480} width={640}/>
+        <ReactPlayerWrapper yourUrl={'https://youtu.be/yaqeZ9Snt4E'}/>
       </div>
     </>
   );
@@ -64,7 +65,7 @@ const ElectronicArts = () => {
         {gameCompaniesParagraph.fifth}
       </Paragraph>
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <ReactPlayer url={'https://youtu.be/-mIIzGgYsG0'} controls={true} height={480} width={640}/>
+        <ReactPlayerWrapper yourUrl={'https://youtu.be/-mIIzGgYsG0'}/>
       </div>
     </>
   );
@@ -88,7 +89,7 @@ const Nintendo = () => {
         {gameCompaniesParagraph.ninth}
       </Paragraph>
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <ReactPlayer url={'https://youtu.be/_gfFlzxuaj8'} controls={true} height={480} width={640}/>
+        <ReactPlayerWrapper yourUrl={'https://youtu.be/_gfFlzxuaj8'}/>
       </div>
     </>
   );
@@ -121,7 +122,7 @@ const RockstarGames = () => {
         {gameCompaniesParagraph.thirteen}
       </Paragraph>
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <ReactPlayer url={'https://youtu.be/v6mDqrmBt0Y'} controls={true} height={480} width={640}/>
+        <ReactPlayerWrapper yourUrl={'https://youtu.be/v6mDqrmBt0Y'}/>
       </div>
     </>
   );
@@ -155,7 +156,7 @@ const SquareEnix = () => {
         {gameCompaniesParagraph.seventeen}
       </Paragraph>
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <ReactPlayer url={'https://youtu.be/uFrxTj9VscU'} controls={true} height={480} width={640}/>
+        <ReactPlayerWrapper yourUrl={'https://youtu.be/uFrxTj9VscU'}/>
       </div>
     </>
   );
@@ -176,7 +177,7 @@ const NaughtyDog = () => {
         {gameCompaniesParagraph.twenty}
       </Paragraph>
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <ReactPlayer url={'https://youtu.be/zS7CKM7wRJ8'} controls={true} height={480} width={640}/>
+        <ReactPlayerWrapper yourUrl={'https://youtu.be/zS7CKM7wRJ8'}/>
       </div>
     </>
   );
@@ -197,7 +198,7 @@ const ValveCorporation = () => {
         {gameCompaniesParagraph.twentyThree}
       </Paragraph>
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <ReactPlayer url={'https://youtu.be/JoV9o6b91Sc'} controls={true} height={480} width={640}/>
+        <ReactPlayerWrapper yourUrl={'https://youtu.be/JoV9o6b91Sc'}/>
       </div>
     </>
   );
@@ -216,7 +217,7 @@ const CDProjectRed = () => {
         {gameCompaniesParagraph.twentyFive}
       </Paragraph>
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <ReactPlayer url={'https://youtu.be/XoBrhuKpTNs'} controls={true} height={480} width={640}/>
+        <ReactPlayerWrapper yourUrl={'https://youtu.be/XoBrhuKpTNs'}/>
       </div>
     </>
   );
@@ -234,7 +235,7 @@ const Bioware = () => {
         {gameCompaniesParagraph.twentySeven}
       </Paragraph>
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <ReactPlayer url={'https://youtu.be/uNZCjagAXWk'} controls={true} height={480} width={640}/>
+        <ReactPlayerWrapper yourUrl={'https://youtu.be/uNZCjagAXWk'}/>
       </div>
     </>
   );
