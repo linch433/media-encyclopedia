@@ -1,14 +1,13 @@
 import {Image} from 'antd';
-import './imageGroupStyle.css';
+import './imageSoloStyle.css';
 
-const ImageGroup = ({images}) => {
-  const height = 200;
+const ImageSolo = ({images}) => {
 
   return (
     <div className='image_group'>
       {images.map((image, index) => (
         <div key={index} className={'image_item'}>
-          <div className={'image_src'}>
+          <div className={'image_source'}>
             <Image src={image.src} alt={image.title} height={'100%'}
                    style={{borderRadius: '5px', objectFit: 'contain'}}/>
           </div>
@@ -19,4 +18,4 @@ const ImageGroup = ({images}) => {
   );
 };
 
-export default ImageGroup;
+export default ImageSolo;

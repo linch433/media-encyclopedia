@@ -1,6 +1,5 @@
 .image_group {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
     justify-content: center;
     margin-bottom: 2rem;
     gap: 1rem;
@@ -13,8 +12,8 @@
     align-items: center;
 }
 
-.image_src {
-    height: 180px;
+.image_source {
+    height: 300px;
 }
 
 .image_title {
@@ -29,7 +28,7 @@
         align-items: center;
     }
 
-    .image_src {
+    .image_source {
         width: 100%;
         height: auto;
     }

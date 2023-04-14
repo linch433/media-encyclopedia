@@ -32,7 +32,7 @@ const MainLayout = () => {
         padding: 24,
         minHeight: 280,
         background: colorBgContainer,
-        overflowY: 'auto',
+        overflowY: 'scroll',
       }}
     >
       <Routes>

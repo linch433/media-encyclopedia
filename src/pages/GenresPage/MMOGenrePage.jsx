@@ -1,6 +1,6 @@
 import {Typography} from "antd";
 import {mmoParagraph} from "../../data/GenresPage/mmos.js";
-import ReactPlayer from "react-player";
+import ReactPlayerWrapper from "../../components/ReactPlayer/ReactPlayerWrapper.jsx";
 
 const MmoGenrePage = () => {
   const {Title, Paragraph} = Typography;
@@ -15,7 +15,7 @@ const MmoGenrePage = () => {
         {mmoParagraph.second}
       </Paragraph>
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <ReactPlayer url={'https://youtu.be/nI77MvK3LqY'} controls={true} height={480} width={640}/>
+        <ReactPlayerWrapper yourUrl={'https://youtu.be/nI77MvK3LqY'}/>
       </div>
     </Typography>
   );
