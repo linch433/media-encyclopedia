@@ -1,16 +1,22 @@
 import {FloatButton, Modal} from "antd";
 import {FormatPainterOutlined, QuestionOutlined, ContactsOutlined} from '@ant-design/icons';
+import CustomTooltip from "./CustomTooltip/CustomTooltip.jsx";
 
 const FloatModalButton = () => {
   const infoModalAboutDeveloper = () => {
     Modal.info({
-      title: 'Інформація про розробника медіа-енциклопедії', content: (
+      title: 'Info', content: (
         <div>
-          Content, abc
+          <div>Кафедра комп'ютерних систем та мереж</div>
+          <div>Назва дисципліни: "Мультимедійні засоби в комп'ютерних системах"</div>
+          <div>Тема <CustomTooltip title={'Мультимедійна енциклопедія'} children={'МЕ'}/>: "Історія технології
+            відеоігор"
+          </div>
+          <div>Виконав Копинець В. І., 2023 рік</div>
         </div>
       ),
       centered: true,
-      width: 600,
+      width: 550,
     })
   };
 
@@ -25,10 +31,6 @@ const FloatModalButton = () => {
           icon={<ContactsOutlined/>}
           tooltip={<div>Інформація про розробника</div>}
           onClick={infoModalAboutDeveloper}
-        />
-        <FloatButton
-          icon={<FormatPainterOutlined/>}
-          tooltip={<div>Зміна теми</div>}
         />
       </FloatButton.Group>
     </>
