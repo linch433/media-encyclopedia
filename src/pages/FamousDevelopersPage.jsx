@@ -11,7 +11,7 @@ import ImageGroup from "../styles/ImageGroup/ImageGroup.jsx";
 import ImageSolo from "../styles/ImageGroup/ImageSolo.jsx";
 import ThreeScene from "../components/ThreeScene/ThreeScene.jsx";
 
-import shibaModel from '/src/assets/shiba/scene.gltf';
+import skyTower from '../assets/shiba.glb';
 
 const {Title, Paragraph} = Typography;
 
@@ -32,7 +32,7 @@ const FamousDevelopersPage = () => {
           borderColor: '#454a6e',
           borderStyle: 'solid',
         }}>
-          <ThreeScene src={shibaModel}/>
+          <ThreeScene src={skyTower}/>
         </div>
       </div>
       <MiyamotoParagraph/>

@@ -6,9 +6,6 @@ function useGLTFModel(src) {
   const {gl} = useThree();
   const loader = new GLTFLoader();
 
-  // Set the correct path to your assets folder
-  loader.setResourcePath("/src/assets/");
-
   return useLoader(GLTFLoader, src, (ext) => loader.parse(ext, gl));
 }
 
