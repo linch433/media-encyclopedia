@@ -9,6 +9,9 @@ import {
 import TitleDivider from "../components/VideoGamesHistoryPage/TitleDivider.jsx";
 import ImageGroup from "../styles/ImageGroup/ImageGroup.jsx";
 import ImageSolo from "../styles/ImageGroup/ImageSolo.jsx";
+import ThreeScene from "../components/ThreeScene/ThreeScene.jsx";
+
+import skyTower from '../assets/shiba.glb';
 
 const {Title, Paragraph} = Typography;
 
@@ -19,6 +22,19 @@ const FamousDevelopersPage = () => {
       <Paragraph>
         {famousDevelopersInfo.first}
       </Paragraph>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+        <div style={{
+          borderWidth: '2px',
+          borderColor: '#454a6e',
+          borderStyle: 'solid',
+        }}>
+          <ThreeScene src={skyTower}/>
+        </div>
+      </div>
       <MiyamotoParagraph/>
       <KojimaParagraph/>
       <MeierParagraph/>
