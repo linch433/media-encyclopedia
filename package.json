@@ -11,6 +11,9 @@
   "dependencies": {
     "@react-buddy/ide-toolbox": "^2.3.1",
     "@react-buddy/palette-antd": "^5.3.0",
+    "@react-three/drei": "^9.65.4",
+    "@react-three/fiber": "^8.12.1",
+    "@types/three": "^0.150.2",
     "antd": "^5.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
