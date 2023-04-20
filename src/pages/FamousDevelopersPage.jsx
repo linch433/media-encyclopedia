@@ -22,19 +22,6 @@ const FamousDevelopersPage = () => {
       <Paragraph>
         {famousDevelopersInfo.first}
       </Paragraph>
-      <div style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-        <div style={{
-          borderWidth: '2px',
-          borderColor: '#454a6e',
-          borderStyle: 'solid',
-        }}>
-          <ThreeScene src={skyTower}/>
-        </div>
-      </div>
       <MiyamotoParagraph/>
       <KojimaParagraph/>
       <MeierParagraph/>

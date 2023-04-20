@@ -8,6 +8,9 @@ import {
 } from "../data/gameEngines.js";
 import TitleDivider from "../components/VideoGamesHistoryPage/TitleDivider.jsx";
 import ImageGroup from "../styles/ImageGroup/ImageGroup.jsx";
+import ThreeScene from "../components/ThreeScene/ThreeScene.jsx";
+import shiba from '../assets/shiba.glb';
+import ThreeSceneContainer from "../styles/ThreeSceneContainer/ThreeSceneContainer.jsx";
 
 const {Title, Paragraph} = Typography;
 
@@ -30,6 +33,7 @@ const EnginesPage = () => {
       <Paragraph>
         {enginesParagraphs.fifth}
       </Paragraph>
+      <ThreeSceneContainer src={shiba} title={'3D моделі з котрими працюють розробники відеоігор'}/>
 
       <UnrealEngine/>
       <CryEngine/>

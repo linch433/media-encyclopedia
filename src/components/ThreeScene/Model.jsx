@@ -5,6 +5,7 @@ import {useRef} from "react";
 function useGLTFModel(src) {
   const {gl} = useThree();
   const loader = new GLTFLoader();
+  loader.setResourcePath('/src/assets');
 
   return useLoader(GLTFLoader, src, (ext) => loader.parse(ext, gl));
 }
@@ -13,5 +14,5 @@ export default function Model({src}) {
   const gltf = useGLTFModel(src);
   const modelRef = useRef(null);
 
-  return <primitive ref={modelRef} object={gltf.scene} scale={[5, 5, 5]}/>;
+  return <primitive ref={modelRef} object={gltf.scene} scale={[10, 10, 10]}/>;
 }

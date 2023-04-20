@@ -5,7 +5,7 @@ import {OrbitControls} from '@react-three/drei';
 import Model from "./Model.jsx";
 
 function ThreeScene({src}) {
-  const size = useMemo(() => ({width: 854, height: 480}), []);
+  const size = useMemo(() => ({width: 531, height: 300}), []);
 
   return (
     <Canvas
