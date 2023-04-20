@@ -10,5 +10,5 @@ export default defineConfig({
       svgrOptions: {}
     })
   ],
-  assetsInclude: ['**/*.gltf'],
+  assetsInclude: ["**/*.gltf", "**/*.bin", "**/*.png"],
 })
