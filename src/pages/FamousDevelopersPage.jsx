@@ -10,7 +10,8 @@ import TitleDivider from "../components/VideoGamesHistoryPage/TitleDivider.jsx";
 import ImageGroup from "../styles/ImageGroup/ImageGroup.jsx";
 import ImageSolo from "../styles/ImageGroup/ImageSolo.jsx";
 import ThreeScene from "../components/ThreeScene/ThreeScene.jsx";
-import shibaModel from '../assets/shiba/scene.gltf';
+
+import shibaModel from '../../public/assets/shiba/scene.gltf';
 
 const {Title, Paragraph} = Typography;
 
