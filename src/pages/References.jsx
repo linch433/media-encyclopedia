@@ -1,10 +1,18 @@
-import React from 'react';
+import {Typography} from "antd";
+import {listOfReferences} from "../data/listOfReferences.js";
+
+const {Title, Paragraph} = Typography;
 
 const ReferencesPage = () => {
   return (
-    <div>
-      References Page
-    </div>
+    <Typography>
+      <Title>Список літератури</Title>
+      {listOfReferences.map((reference, index) => (
+        <Paragraph>
+          {index + 1}. {reference}
+        </Paragraph>
+      ))}
+    </Typography>
   );
 };
 
