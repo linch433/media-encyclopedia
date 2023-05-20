@@ -17,7 +17,7 @@ const {Title, Paragraph} = Typography;
 const EnginesPage = () => {
   return (
     <Typography>
-      <Title>Ігрові двигуни</Title>
+      <Title>Game engines</Title>
       <Paragraph>
         {enginesParagraphs.first}
       </Paragraph>

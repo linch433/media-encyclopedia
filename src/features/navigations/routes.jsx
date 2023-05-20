@@ -81,7 +81,7 @@ export const menuItems = [
   {
     key: '4',
     icon: <DashboardOutlined/>,
-    label: 'Ігрові двигуни',
+    label: 'Game engines',
     to: '/engines',
   },
   {
@@ -90,12 +90,12 @@ export const menuItems = [
     label: 'Ігрові компанії',
     to: '/companies',
   },
-  {
-    key: '6',
-    icon: <BookOutlined/>,
-    label: 'Глосарій',
-    to: '/glossary',
-  },
+  // {
+  //   key: '6',
+  //   icon: <BookOutlined/>,
+  //   label: 'Глосарій',
+  //   to: '/glossary',
+  // },
   {
     key: '7',
     icon: <LinkOutlined/>,

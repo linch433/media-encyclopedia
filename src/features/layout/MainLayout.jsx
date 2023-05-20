@@ -42,7 +42,7 @@ const MainLayout = () => {
         <Route path="/famous_developers" element={<FamousDevelopersPage/>}/>
         <Route path="/engines" element={<EnginesPage/>}/>
         <Route path="/companies" element={<CompaniesPage/>}/>
-        <Route path="/glossary" element={<GlossaryPage/>}/>
+        {/*<Route path="/glossary" element={<GlossaryPage/>}/>*/}
         <Route path="/references" element={<ReferencesPage/>}/>
         <Route path='/genres/actions' element={<ActionGenrePage/>}/>
         <Route path='/genres/adventure' element={<AdventureGenrePage/>}/>
